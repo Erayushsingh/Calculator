@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+  
+<body class="h-[100vh] flex justify-center items-center bg-slate-200 border-8 border-blue-400">
+  <div class="calculator border-4 border-lime-950 rounded-lg bg-slate-400 p-2">
+     <h1 class="text-center font-bold text-2xl">Calculator</h1>
+  <input type="text" class="border border-lime-300 p-3 my-4 bg-white-400 rounded-md w-80 text-right h-20" id="display" placeholder="Enter the value">
+   
+    <div class="flex justify-between items-center font-bold ">
+      <button class=
+        "border shadow-md w-[9rem] h-14 rounded-md my-2 hover:bg-red-400 text-white bg-rose-600 " 
+ onclick="clearDisplay()">AC</button>
+      <button  class= "border shadow-md w-14 h-14 rounded-md my-2 hover:bg-red-400 text-white bg-indigo-600" onClick="appendNumber('%')">%</button>
+      <button  class= "border shadow-md w-14 h-14 rounded-md my-2 hover:bg-red-400 text-white bg-indigo-600" onClick="appendNumber('/')">/</button>
+    </div>
+
+    
+    <div class="flex justify-between items-center font-bold">
+      <button class= "border shadow-md w-14 h-14 rounded-md my-2 hover:bg-red-400 text-white bg-stone-700 "   onClick="appendNumber('7')">7</button>
+      <button class= "border shadow-md w-14 h-14 rounded-md my-2 hover:bg-red-400 text-white bg-stone-700"  onClick="appendNumber('8')">8</button>
+      <button class= "border shadow-md w-14 h-14 rounded-md my-2 hover:bg-red-400 text-white bg-stone-700"  onClick="appendNumber('9')">9</button>
+      <button class= "border shadow-md w-14 h-14 rounded-md my-2 hover:bg-red-400 text-white bg-indigo-600" onClick="appendNumber('.')">.</button>
+    </div>
+    
+    <div class="flex justify-between items-center font-bold">
+      <button class= "border shadow-md w-14 h-14 rounded-md my-2 hover:bg-red-400 text-white bg-stone-700" onClick="appendNumber('6')">6</button>
+      <button class= "border shadow-md w-14 h-14 rounded-md my-2 hover:bg-red-400 text-white bg-stone-700" onClick="appendNumber('5')">5</button>
+      <button class= "border shadow-md w-14 h-14 rounded-md my-2 hover:bg-red-400 text-white bg-stone-700" onClick="appendNumber('4')">4</button>
+      <button class= "border shadow-md w-14 h-14 rounded-md my-2 hover:bg-red-400 text-white bg-indigo-600" onClick="appendNumber('-')">-</button>
+    </div>
+
+    
+    <div class="flex justify-between items-center font-bold">
+      <button class= "border shadow-md w-14 h-14 rounded-md my-2 hover:bg-red-400 text-white bg-stone-700" onClick="appendNumber('3')">3</button>
+      <button class= "border shadow-md w-14 h-14 rounded-md my-2 hover:bg-red-400 text-white bg-stone-700" onClick="appendNumber('2')">2</button>
+      <button class= "border shadow-md w-14 h-14 rounded-md my-2 hover:bg-red-400 text-white bg-stone-700" onClick="appendNumber('1')">1</button>
+      <button class= "border shadow-md w-14 h-14 rounded-md my-2 hover:bg-red-400 text-white bg-indigo-600" onClick="appendNumber('+')">+</button>
+    </div>
+
+
+
+    <div class="flex justify-between items-center font-bold">
+      <button class= "border shadow-md w-14 h-14 rounded-md my-2 hover:bg-red-400 text-white bg-stone-700" onClick="appendNumber('0')">0</button>
+      <button class= "border shadow-md w-14 h-14 rounded-md my-2 hover:bg-red-400 text-white bg-stone-700" onClick="calculate()">=</button>
+      <button class= "border shadow-md w-[9rem] h-14 rounded-md my-2 hover:bg-red-400 text-white bg-rose-600" onClick="deleteLast()">DEL</button>
+     
+    </div>
+ <script src="script.js"></script>
+</body>
+
+</html>
